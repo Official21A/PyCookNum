@@ -40,3 +40,14 @@ m * v
   2]
  """
 
+# For linear algebra we can use the linalg subpackage
+import numpy.linalg
+
+numpy.linalg.det(m) # -229.999999999993
+
+numpy.linalg.eigvals(m) # {-13.11, 2.79, 6.35}
+
+x = numpy.linalg.solve(m, v) # Solve for x in mx = v
+
+# For more methods of linear algebra check the numpy methods in this field
+# http://www.numpy.org
